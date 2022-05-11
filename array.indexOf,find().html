@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		// 배열&함수 - 11시10분
+		let s = ['이유덕', '이재영', '권종표', '이재영', '박민호',
+		'강상희', '이재영', '김지완', '최승혁', '이성연', '박영서',
+	    '박민호', '전경헌', '송정환', '김재성', '이유덕', '전경헌'];
+
+
+
+
+		/*
+			3. 함수생성, 매개변수(arr, value)
+			결과 	: "해당 data " + value + " 은" + arr + "에 존재한다."
+				  "해당 data " + value + " 은" + arr + "에 존재하지 않는다."
+		*/
+
+		let arr = [10, 20, 30, 40];
+
+		/*
+			param
+			 arr 	: 배열
+			 value 	: 값
+			return
+			 String
+		*/
+		function find( array, value ){
+			let indexNum = array.indexOf( value );
+
+			if( indexNum == -1 ){
+				return "해당 data " + value + " 은" + array + "에 존재하지 않는다."
+			} else {
+			 	return "해당 data " + value + " 은" + array + "에 존재한다.";
+			}
+		}
+
+		document.write( find(arr, 50) );
+
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
