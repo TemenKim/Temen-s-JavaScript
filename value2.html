@@ -6,22 +6,42 @@
 </head>
 <body>
 	<script>
-		var first = "coding";
-		console.log(first + "javascript");
+		/*
+			let, const의 차이점
+			 - let : 변수에 재할당이 가능하다
+			 - const : 변수 재선언나 변수 재할당이 모두 불가능하다
+			 
+			- 재할당이 필요한 경우에 한해 let을 사용.
+			- 재할당이 필요없는 상수와 객체에는 const를 사용한다.
+		*/
 		
-		var a = 'coding', b = 'everybody';
-		console.log(a + b);
+		// let
+		let name = "html";
+		console.log(name);
 		
-		a = '코딩';
-		console.log(a + b);
+		// error
+		//let name = "javascript";
+		//console.log(name);
 		
-		var c = 1
-		console.log(c)
+		name = 'react';
+		console.log(name);
 		
-		var d = 1; console.log(d);
+		// const
+		const name2 = 'html2';
+		console.log(name2);
+		
+		// error
+		//const name2 = 'javascript2';
+		//console.log(name2);
+		
+		// error
+		name2 = 'react2';
+		console.log(name2);
 	</script>
 </body>
 </html>
+
+
 
 
 
